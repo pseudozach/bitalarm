@@ -1,3 +1,5 @@
+--Forked from ClockPlus, all license & copyright apply the same--
+
 # Clock+
 Clock+ is a simple alarm clock, timer, and stopwatch app that offers a delightful user experience
 for all your timing needs.
