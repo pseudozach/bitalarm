@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fundheadertv"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Fund Alarm Wallet"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/qrcode">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:selectAllOnFocus="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/qrcode"
+        android:text="⚡ Payment Request ⚡"
+        android:textAlignment="center"
+        android:id="@+id/invoicetv" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/launchwalletbutton"
+        android:layout_below="@+id/invoicetv"
+        android:layout_centerHorizontal="true"
+        android:text="Pay with Wallet"/>
+
+</RelativeLayout>

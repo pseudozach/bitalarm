@@ -18,7 +18,7 @@
   ~ along with ClockPlus.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,7 +29,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.philliphsu.clock2.stopwatch.ui.ChronometerWithMillis
+        <com.pseudozach.bitalarm.stopwatch.ui.ChronometerWithMillis
             android:id="@+id/chronometer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,13 +43,13 @@
 
     </LinearLayout>
 
-    <com.philliphsu.clock2.UntouchableSeekBar
+    <com.pseudozach.bitalarm.UntouchableSeekBar
         android:id="@+id/seek_bar"
         app:layout_anchor="@id/chronometer"
         app:layout_anchorGravity="bottom"
         style="@style/BaseSeekBar"/>
 
-    <android.support.v7.widget.GridLayout
+    <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/fab_total_height"
         android:layout_gravity="bottom"
@@ -66,6 +66,6 @@
             android:id="@+id/stop"
             style="@style/StopButton"/>
 
-    </android.support.v7.widget.GridLayout>
+    </androidx.gridlayout.widget.GridLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

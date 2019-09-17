@@ -18,8 +18,8 @@
   ~ along with ClockPlus.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <!--<PreferenceCategory android:title="@string/title_category_world_clock">
         <ListPreference
             android:key="@string/key_show_time_offsets_from"
@@ -30,6 +30,41 @@
             android:defaultValue="@string/local_time"
             android:summary="%s"/>
     </PreferenceCategory>-->
+
+    <PreferenceCategory android:title="@string/title_category_BitAlarm">
+        <ListPreference
+            android:key="@string/key_satspersecond"
+            android:title="@string/title_satspersecond"
+            android:dialogTitle="@string/title_satspersecond"
+            android:entries="@array/array_sps"
+            android:entryValues="@array/array_sps"
+            android:defaultValue="@string/sps_woke"
+            android:summary="%s">
+        </ListPreference>
+        <!--<ListPreference
+            android:key="@string/key_donateto"
+            android:title="@string/title_donateto"
+            android:dialogTitle="@string/title_donateto"
+            android:entries="@array/array_donateto"
+            android:entryValues="@array/array_donateto"
+            android:defaultValue="@string/torproject"
+            android:summary="%s">
+        </ListPreference>-->
+
+        <com.pseudozach.bitalarm.MyEditTextPreference
+            android:key="@string/key_donateto"
+            android:title="@string/title_donateto"
+            android:defaultValue="@string/torproject"
+            android:summary="%s"
+            android:dialogTitle="@string/title_donateto"
+            android:dialogMessage="@string/donateto_message"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="torproject"
+            />
+
+    </PreferenceCategory>
+
     <PreferenceCategory android:title="@string/title_category_general">
         <ListPreference
             android:key="@string/key_theme"
@@ -37,7 +72,7 @@
             android:dialogTitle="@string/title_theme"
             android:entries="@array/array_theme"
             android:entryValues="@array/array_theme"
-            android:defaultValue="@string/theme_light"
+            android:defaultValue="@string/theme_dark"
             android:summary="%s">
         </ListPreference>
         <Preference android:title="@string/title_system_date_time_settings">
@@ -91,7 +126,7 @@
             android:summary="%s"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/title_category_timers">
-        <com.philliphsu.clock2.settings.ThemedRingtonePreference
+        <com.pseudozach.bitalarm.settings.ThemedRingtonePreference
             android:key="@string/key_timer_ringtone"
             android:title="@string/title_timer_ringtone"
             android:ringtoneType="alarm"

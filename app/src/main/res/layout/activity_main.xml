@@ -18,7 +18,7 @@
   ~ along with ClockPlus.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     android:id="@+id/main_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,14 +26,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.philliphsu.clock2.MainActivity">
+    tools:context="com.pseudozach.bitalarm.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:elevation="0dp"> <!--Must set this!-->
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
@@ -41,24 +41,37 @@
             app:contentInsetStart="0dp"
             app:popupTheme="?themedPopupOverlay">
 
-            <android.support.design.widget.TabLayout
+            <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:tabMode="scrollable"
+                app:tabIconTint="@color/tab_icon_color"
+                app:tabIndicatorColor="@color/icon_color_active_dark"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabInlineLabel="true"
                 app:tabIndicatorHeight="0dp"/>
 
-        </android.support.v7.widget.Toolbar>
+            <!--<com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabInlineLabel="true"
+                app:tabIndicatorHeight="0dp"/>-->
 
-    </android.support.design.widget.AppBarLayout>
+        </androidx.appcompat.widget.Toolbar>
 
-    <android.support.v4.view.ViewPager
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,4 +80,4 @@
         android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_add_24dp"/>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

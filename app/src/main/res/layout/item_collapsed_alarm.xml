@@ -43,18 +43,29 @@
         <TextView
             android:id="@+id/label"
             style="@style/BaseLabel"
-            android:hint=""
+            android:hint="Wake up or lose Sats!"
             android:textStyle="bold"
             android:layout_below="@id/time_layout"
-            android:layout_marginBottom="@dimen/item_margin_between_elements"/>
+            android:layout_marginBottom="4dp"/>
 
-        <com.philliphsu.clock2.alarms.ui.AlarmCountdown
+        <com.pseudozach.bitalarm.alarms.ui.AlarmCountdown
             android:id="@+id/countdown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_size_subhead"
             android:layout_marginStart="@dimen/item_margin_between_elements"
-            android:layout_below="@id/time_layout"
+            android:visibility="gone"
+            android:layout_below="@id/label"
+            android:layout_toEndOf="@id/label"/>
+
+        <com.pseudozach.bitalarm.alarms.ui.AlarmCountup
+            android:id="@+id/countup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_subhead"
+            android:layout_marginStart="@dimen/item_margin_between_elements"
+            android:layout_below="@id/countdown"
+            android:visibility="gone"
             android:layout_toEndOf="@id/label"/>
 
         <TextView
@@ -62,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mon, Tue, Wed, Thu, Fri, Sat, Sun"
-            android:layout_below="@id/label"
+            android:layout_below="@id/countup"
             android:layout_marginBottom="@dimen/item_margin_between_elements"/>
 
         <!-- The drawable is added programmatically -->
@@ -75,6 +86,31 @@
             android:drawablePadding="@dimen/text_compound_drawable_padding"
             android:paddingEnd="@dimen/button_text_right_padding"
             style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/dismiss"
+            android:id="@+id/snoozerl">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/invertedimage2" />
+
+            <com.pseudozach.bitalarm.stopwatch.ui.ChronometerWithMillis
+                android:id="@+id/elapsed_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size_display_1"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Subhead"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 

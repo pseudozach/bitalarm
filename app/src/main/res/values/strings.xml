@@ -18,11 +18,12 @@
   -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Clock+</string>
+    <string name="app_name">Bit Alarm</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <string name="title_activity_ringtone">Clock+</string>
+    <string name="title_activity_invoice">Fund Alarm Wallet</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
@@ -222,6 +223,7 @@
 
     <string name="empty_alarms_container">No alarms added</string>
     <string name="empty_timers_container">No timers added</string>
+    <string name="empty_wallet_container">Alarm wallet is empty</string>
 
     <string name="stopwatch">Stopwatch</string>
     <string name="lap">Lap</string>
@@ -231,4 +233,10 @@
     <!-- https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/strings.xml -->
     <!-- The representation of a time duration when negative. An example is -1:14. This can be used with a countdown timer for example.-->
     <string name="negative_duration">\u2212<xliff:g id="time" example="1:14">%1$s</xliff:g></string>
+    <string name="title_category_BitAlarm">Bitalarm</string>
+    <string name="key_satspersecond">satspersecond</string>
+    <string name="title_satspersecond">Sats per Second</string>
+    <string name="key_donateto">donateto</string>
+    <string name="title_donateto">Donate Snoozed Sats To</string>
+    <string name="donateto_message">You can enter any twitter account, they will receive the sats via bottle.li</string>
 </resources>

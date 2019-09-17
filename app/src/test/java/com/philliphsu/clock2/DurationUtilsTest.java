@@ -19,7 +19,7 @@
 
 package com.philliphsu.clock2;
 
-import com.philliphsu.clock2.util.DurationUtils;
+import com.pseudozach.bitalarm.util.DurationUtils;
 
 import org.junit.Test;
 

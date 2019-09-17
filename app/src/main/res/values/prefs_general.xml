@@ -34,5 +34,20 @@
         <item>@string/theme_black</item>
     </string-array>
 
+    <string-array name="array_sps">
+        <item>@string/sps_broke</item>
+        <item>@string/sps_woke</item>
+    </string-array>
+
+    <string-array name="array_donateto">
+        <item>@string/citlayik</item>
+        <item>@string/torproject</item>
+    </string-array>
+
     <string name="key_last_tab">last_tab</string>
+    <string name="sps_broke">Broke: 1 sec = 1 msat</string>
+    <string name="sps_woke">Woke: 1 sec = 1 sat</string>
+<!--    <string name="sps_woke">Woke: 1 second = 1 satoshi</string>-->
+    <string name="citlayik">citlayik</string>
+    <string name="torproject">torproject</string>
 </resources>

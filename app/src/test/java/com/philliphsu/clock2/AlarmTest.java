@@ -19,16 +19,16 @@
 
 package com.philliphsu.clock2;
 
-import com.philliphsu.clock2.alarms.Alarm;
-import com.philliphsu.clock2.alarms.misc.DaysOfWeek;
+import com.pseudozach.bitalarm.alarms.Alarm;
+import com.pseudozach.bitalarm.alarms.misc.DaysOfWeek;
 
 import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import static com.philliphsu.clock2.alarms.misc.DaysOfWeek.SATURDAY;
-import static com.philliphsu.clock2.alarms.misc.DaysOfWeek.SUNDAY;
+import static com.pseudozach.bitalarm.alarms.misc.DaysOfWeek.SATURDAY;
+import static com.pseudozach.bitalarm.alarms.misc.DaysOfWeek.SUNDAY;
 import static java.lang.System.out;
 import static java.util.Calendar.HOUR_OF_DAY;
 import static java.util.Calendar.MILLISECOND;

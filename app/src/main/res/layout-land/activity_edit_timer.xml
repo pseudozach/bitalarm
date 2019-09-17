@@ -25,9 +25,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".timers.EditTimerActivity">
+    tools:context="com.pseudozach.bitalarm.timers.EditTimerActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:maxLines="1"
             android:ellipsize="end"/>
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +105,7 @@
 
             </LinearLayout>
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_gravity="bottom|center"
                 style="@style/TimerFab"/>
@@ -116,7 +116,7 @@
         because it would be a major hassle to adapt it for timers. -->
         <!-- We're borrowing the margins for bottom sheets, since this numpad
         was "borrowed" from the bottom sheet numpad anyway. -->
-        <android.support.v7.widget.GridLayout
+        <androidx.gridlayout.widget.GridLayout
             android:id="@+id/numpad"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -187,7 +187,7 @@
                 app:layout_column="2"
                 android:tint="?attr/themedIconTint"/>
 
-        </android.support.v7.widget.GridLayout>
+        </androidx.gridlayout.widget.GridLayout>
 
     </LinearLayout>
 
